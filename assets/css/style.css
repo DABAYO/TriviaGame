@@ -12,6 +12,20 @@ h1 {
     color: rgb(76, 43, 226);
 }
 
+#countdown {
+    width: 260px;
+    height: 60px;
+    background-color: rgb(76, 43, 226);
+    padding-left: 10;
+    margin: auto;
+    font-family: Courier New, Courier, monospace;
+    font-size: 20px;
+    text-align: left;
+    font-weight: bold;    
+    color: white;
+    position: absolute;
+}
+
 .wrapper {
     
 }
@@ -26,7 +40,7 @@ h1 {
     border-style: outset;
 }
 
-.question {
+.q1, .q2, .q3, .q4, .q5 {
     width: 90%;
     margin-top: 30px;
     margin-left: 30px;
@@ -34,13 +48,14 @@ h1 {
     font-family: Arial, Helvetica, sans-serif;
     font-style: oblique;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 30px;
     }
 
-.answers {
+.a1, .a2, .a3, .a4, .a5 {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: normal;
     font-style: normal;
+    font-size: 28px;
 }
 
 

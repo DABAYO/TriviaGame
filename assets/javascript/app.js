@@ -1,11 +1,11 @@
 $(document).ready();
-setTimeout(timeUp, 1000 * 60);
+// setTimeout(timeUp, 1000 * 60);
 
-function timeUp() {
+// function timeUp() {
     
-    $("#timer").append("<h2>Time's Up!</h2>");
-.html{id=countdown<"Time's up!">];
-    }
+//     $("#timer").append("<h2>Time's Up!</h2>");
+// .html{id=countdown<"Time's up!">];
+//     }
 
 var correct= 0;
 var incorrect= 0;
@@ -20,6 +20,7 @@ var q5 = document.TriviaQuiz.q5.value;
 function checkAns() {
     if (q1 == "Charlotte Brontë") {
         correct++;
+        console.log("Charlotte Bronte guessed and correct var is " + correct)
     }
     else {
         incorrect++;
@@ -53,9 +54,9 @@ function checkAns() {
         incorrect++;
     }
     document.getElementById("results").style.visibility = "visible";
-    document.getElementById("numRight").html(correct + " correct answers");
-    document.getElementById("numWrong").html(incorrect + " incorrect answers");
-    }
+    document.getElementById("numRight").innerHTML(correct + " correct answers");
+    document.getElementById("numWrong").innerHTML(incorrect + " incorrect answers");
 }
-checkAns();
-timeUp();
+
+
+// timeUp();

@@ -7,100 +7,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="countdown">
-        <p id="timer">Time Remaining: </p>
+        <p>Time Remaining:</p> 
+        <p id="timer"></p>
     </div>
     <div class="wrapper">
         <h1>Trivia Game</h1>
 
         <div class="container">
 
-            <div class="q1">
-                Who wrote Jane Eyre?<br>
-                <div class="a1">
-                    <label>
-                        <input type="radio" name="one" value="a">Emily Brontë
-                    </label>
-                    <label>
-                        <input type="radio" name="one" value="b">Charlotte Brontë
-                    </label>                    
-                    <label>
-                        <input type="radio" name="one" value="c">Maria Brontë
-                    </label>
-                    <label>
-                        <input type="radio" name="one" value="d">Anne Brontë
-                    </label>
-                </div>                                      
-            </div>
-            <div class="q2">
-                Vivaldi's Four Seasons was written for which instrument?<br>
-                <div class="a2">
-                    <label>
-                        <input type="radio" name="two" value="a">flute
-                    </label>
-                    <label>
-                        <input type="radio" name="two" value="a">cello
-                    </label>
-                    <label>
-                        <input type="radio" name="two" value="a">piano
-                    </label>
-                    <label>                     
-                        <input type="radio" name="two" value="a">violin
-                    </label>
-                </div> 
-            </div>
-            <div class="q3">
-                How many different varieties of goldfish are there?<br>
-                <div class="a3">
-                    <label>                     
-                        <input type="radio" name="three" value="a">20
-                    </label>
-                    <label>                     
-                        <input type="radio" name="three" value="a">50
-                    </label>
-                    <label>                     
-                        <input type="radio" name="three" value="a">100
-                    </label>
-                    <label>                     
-                        <input type="radio" name="three" value="a">250
-                    </label>
-                </div>    
-            </div>
-            <div class="q4">
-                What is the largest lake in the world?<br>
-                <div class="a4">
-                    <label>                     
-                        <input type="radio" name="four" value="a">Lake Michigan
-                    </label>
-                    <label>                   
-                        <input type="radio" name="four" value="a">Caspian Sea
-                    </label>
-                    <label>                     
-                        <input type="radio" name="four" value="a">Lake Victoria
-                    </label>
-                    <label>                     
-                        <input type="radio" name="four" value="a">Lake Malawi
-                    </label>  
-                </div>    
-            </div>
-            <div class="q5">
-                Dr. Jonas Salk discovered the vaccine for one of the following:<br>
-                <div class="a5">
-                    <label>                     
-                        <input type="radio" name="five" value="a">Tuberculosis
-                    </label>
-                    <label>                     
-                        <input type="radio" name="five" value="a">Flu
-                    </label> 
-                    <label>                     
-                        <input type="radio" name="five" value="a">Polio
-                    </label>
-                    <label>                     
-                        <input type="radio" name="five" value="a">Measels
-                    </label>   
-                </div>    
+            <form id="TriviaQuiz" name="TriviaQuiz">
+
+                <div class="q1">
+                    Who wrote Jane Eyre?<br>
+                    <div class="a1">
+                            <input type="radio" name="one" value="Emily Brontë">Emily Brontë
+                            <input type="radio" name="one" value="Charlotte Brontë">Charlotte Brontë
+                            <input type="radio" name="one" value="Maria Brontë">Maria Brontë
+                            <input type="radio" name="one" value="Anne Brontë">Anne Brontë
+                    </div>                                      
+                </div>
+                <div class="q2">
+                    Vivaldi's Four Seasons was written for which instrument?<br>
+                    <div class="a2">
+                            <input type="radio" name="two" value="Flute">Flute
+                            <input type="radio" name="two" value="Cello">Cello
+                            <input type="radio" name="two" value="Piano">Piano                     
+                            <input type="radio" name="two" value="Violin">Violin
+                    </div> 
+                </div>
+                <div class="q3">
+                    How many different varieties of goldfish are there?<br>
+                    <div class="a3">                     
+                            <input type="radio" name="three" value="20">20                     
+                            <input type="radio" name="three" value="50">50                    
+                            <input type="radio" name="three" value="100">100                   
+                            <input type="radio" name="three" value="250">250
+                    </div>    
+                </div>
+                <div class="q4">
+                    What is the largest lake in the world?<br>
+                    <div class="a4">                   
+                            <input type="radio" name="four" value="Lake Michigan">Lake Michigan                  
+                            <input type="radio" name="four" value="Caspian Sea">Caspian Sea                     
+                            <input type="radio" name="four" value="Lake Victoria">Lake Victoria                     
+                            <input type="radio" name="four" value="Lake Malawi">Lake Malawi 
+                    </div>    
+                </div>
+                <div class="q5">
+                    Dr. Jonas Salk discovered the vaccine for one of the following:<br>
+                    <div class="a5">                    
+                            <input type="radio" name="five" value="Tuberculosis">Tuberculosis                    
+                            <input type="radio" name="five" value="Flu">Flu                    
+                            <input type="radio" name="five" value="Polio">Polio                    
+                            <input type="radio" name="five" value="Measels">Measels<br>  
+                    </div>    
+                </div>
+                <div style="text-align:center">
+                    <input type="button" id="submit" value="Submit Answers" onclick="checkAns();">
+                </div>
+            </form>
+
+            <div id="results">
+                <p id="numRight"></p>
+                <p id="numWrong"></p>
             </div>
         </div>
         <script src="app.js"></script>
